@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mohammad Rasel Ahammad Riaz — Personal Website">
+<title>Mohammad Rasel Ahammad Riaz</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#08090d;color:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:rgba(8,9,13,.75);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{font-weight:800;letter-spacing:1px}
+.logo span{color:#8b5cf6}
+.navlinks{display:flex;gap:26px;font-size:14px;color:#ccc}
+.navlinks a:hover{color:#fff}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px 70px;background:radial-gradient(circle at 50% 35%,#25154d 0,#11121c 38%,#08090d 72%)}
+.hero-inner{max-width:900px}
+.badge{display:inline-block;padding:8px 14px;border:1px solid rgba(139,92,246,.5);border-radius:99px;color:#c4b5fd;font-size:13px;margin-bottom:22px}
+h1{font-size:clamp(42px,8vw,88px);line-height:1.02;letter-spacing:-3px}
+h1 span{background:linear-gradient(90deg,#fff,#a78bfa);-webkit-background-clip:text;color:transparent}
+.hero p{max-width:650px;margin:24px auto;color:#b7b8c2;font-size:18px}
+.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{padding:13px 21px;border-radius:12px;border:1px solid #343641;font-weight:700}
+.primary{background:#8b5cf6;border-color:#8b5cf6}
+.primary:hover{background:#7c3aed}
+section{padding:95px 7%}
+.container{max-width:1100px;margin:auto}
+.title{text-align:center;margin-bottom:45px}
+.title h2{font-size:38px}.title p{color:#999;margin-top:8px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:#11131a;border:1px solid #252733;border-radius:22px;padding:30px}
+.card p{color:#aaa}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+.stat{padding:20px;background:#0d0f15;border-radius:16px;text-align:center}
+.stat strong{font-size:25px;display:block}.stat small{color:#888}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.photo{height:260px;border-radius:20px;background:linear-gradient(135deg,#181a25,#29203f);display:flex;align-items:center;justify-content:center;color:#777;border:1px solid #292b38}
+.socials{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.social{padding:15px 22px;border:1px solid #30323e;border-radius:14px;background:#101219}
+.contact{text-align:center}
+footer{text-align:center;padding:30px;color:#777;border-top:1px solid #20222c}
+.menu{display:none}
+@media(max-width:700px){
+.navlinks{display:none}.menu{display:block;color:#aaa}
+.about{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.stats{grid-template-columns:1fr}
+h1{letter-spacing:-2px}.hero p{font-size:16px}section{padding:75px 5%}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="#home">MR<span>AR</span></a>
+  <div class="navlinks">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#social">Social</a><a href="#contact">Contact</a>
+  </div>
+  <div class="menu">☰</div>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="badge">WELCOME TO MY PERSONAL WEBSITE</div>
+    <h1>MOHAMMAD<br><span>RASEL AHAMMAD RIAZ</span></h1>
+    <p>This is my personal space on the web — a place to share my profile, photos, videos and social links.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#about">Explore My Profile</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+<div class="container">
+  <div class="title"><h2>About Me</h2><p>A little introduction</p></div>
+  <div class="about">
+    <div class="card">
+      <h3>Mohammad Rasel Ahammad Riaz</h3>
+      <p style="margin-top:14px">Welcome to my personal website. This section can contain your full biography, work, interests, achievements and anything you want visitors to know about you.</p>
+    </div>
+    <div class="card">
+      <h3>My Profile</h3>
+      <div class="stats">
+        <div class="stat"><strong>MRAR</strong><small>Initials</small></div>
+        <div class="stat"><strong>UAE</strong><small>Based in</small></div>
+        <div class="stat"><strong>∞</strong><small>Goals</small></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="container">
+  <div class="title"><h2>My Gallery</h2><p>Your photos can be added here</p></div>
+  <div class="gallery">
+    <div class="photo">PHOTO 01</div><div class="photo">PHOTO 02</div><div class="photo">PHOTO 03</div>
+  </div>
+</div>
+</section>
+
+<section id="social">
+<div class="container">
+  <div class="title"><h2>Find Me Online</h2><p>Add your real social links here</p></div>
+  <div class="socials">
+    <a class="social" href="#" target="_blank">Facebook</a>
+    <a class="social" href="#" target="_blank">Instagram</a>
+    <a class="social" href="#" target="_blank">TikTok</a>
+    <a class="social" href="#" target="_blank">YouTube</a>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container contact">
+  <div class="title"><h2>Contact Me</h2><p>Let's connect</p></div>
+  <div class="card">
+    <p>Replace this text with your WhatsApp number, email or other contact information.</p>
+    <div class="buttons" style="margin-top:20px"><a class="btn primary" href="https://wa.me/" target="_blank">WhatsApp Me</a></div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>© 2026 Mohammad Rasel Ahammad Riaz. All rights reserved.</footer>
+</body>
+</html>
